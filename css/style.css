@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+/* font-family: 'Poppins', sans-serif; 200 / 400 / 600 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background:var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.introduction h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin: 2rem 1rem;
+}
+
+.introduction h1 span {
+    font-weight: 200;
+    
+}
+
+.introduction p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    margin: 2rem;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cyan {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20), 0px -5px var(--Cyan);
+    margin: 1em 1em 0.5em 1em;
+    padding: 2rem;
+    border-radius: 10px;
+    width:80vh;
+    height: 35vh;
+}
+
+.cyan h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+.cyan p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.cyan img {
+    float: right;
+    width: 50px;
+}
+
+.red {
+    margin: 1em;
+    padding: 2rem;
+    border-radius: 10px;
+    width:50vh;
+    height: 30vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20), 0px -5px var(--red);
+}
+
+.red h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+.red p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.red img {
+    float: right;
+    width: 50px;
+}
+
+.yellow {
+    margin: 1em;
+    padding: 2rem;
+    border-radius: 10px;
+    width:50vh;
+    height: 30vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20), 0px -5px var(--Orange);
+}
+
+
+.yellow h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+.yellow p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.yellow img {
+    float: right;
+    width: 50px;
+}
+
+
+.blue {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20), 0px -5px var(--Blue);
+    margin: 1em 1em 0.5em 1em;
+    padding: 2rem;
+    border-radius: 10px;
+    width:80vh;
+    height: 35vh;
+}
+
+.blue h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+.blue p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.blue img {
+    float: right;
+    width: 50px;
+}
+
+@media (max-width: 888px ) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .blue {
+        width: 50vh;
+    }
+
+    .cyan {
+        width: 50vh;
+    }
+
+    .introduction p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 434px ) {
+    #break {display: none;}
+
+    .introduction h1 span::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .yellow {
+        width: 50vh;
+    }
+}
